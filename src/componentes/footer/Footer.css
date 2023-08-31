@@ -8,34 +8,34 @@ footer{
     color: #fff;
 }
 
-.div1{
+footer .div1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.div1 h1{
+footer .div1 h1{
     font-weight: bold;
     font-size: 70px;
 }
 
-nav{
+footer nav{
     display: flex;
 }
 
-p{
+footer p{
     font-family: 'Preahvihear', sans-serif;
 }
 
-nav ul{
+footer nav ul{
     color: #fff;
     font-weight: normal;
     font-size: 15px;
     font-family: 'Preahvihear', sans-serif;
 }
 
-nav ul li{
+footer nav ul li{
     list-style: none;
 }
 

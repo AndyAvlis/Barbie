@@ -1,14 +1,14 @@
 import './App.css'
-// import Footer from './componentes/footer/Footer'
+import Footer from './componentes/footer/Footer'
 import Header from './componentes/header/Header'
-import Footer1 from './componentes/footer1/Footer1'
+import Main from './componentes/main/Main'
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Footer /> */}
-      <Footer1 />
+      <Main />
+      <Footer />
     </>
   )
 }
