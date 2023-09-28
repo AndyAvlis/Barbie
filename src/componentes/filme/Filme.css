@@ -1,13 +1,17 @@
-.filmeContent{
+.filme_content{
+    /* width: 300px; */
     padding: 50px;
-    width: 300px;
-    box-shadow: 0px 0px 10px 4px #c7c7c7bb;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
-
-.filmeContent>img{
+.foto_filme{
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+}
+.foto_filme>img{
     width: 100%;
 }
-
-.texto p{
+.sinopse{
     text-align: justify;
 }

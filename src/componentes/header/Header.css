@@ -2,8 +2,12 @@ body{
     margin: 0px;
 }
 
-header h1{
+header .logo a{
     font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+
 }
 
 header{
@@ -33,6 +37,7 @@ header nav ul{
     display: flex;
     list-style: none;
     gap: 15px;
+    align-items: center;
 }
 
 header nav ul li a{
