@@ -2,7 +2,7 @@ import './Main.css'
 import Filme from "../filme/Filme"
 import React, { useEffect, useState } from 'react'
 type FilmesType = {
-    id: number,
+    _id: number,
     titulo: string,
     descricao: string,
     imagem: string
@@ -12,12 +12,12 @@ function Main(){
 
     const url = "http://localhost:3000/filmes"    
     const [filmes,setDados] = useState<FilmesType[]>([])
-    
-     useEffect(()=>{
-         fetch(url, {method:"GET"})
-         .then((resposta)=>resposta.json())
-         .then((json)=>setDados(json))
-     },[])  
+
+    useEffect(()=>{
+        fetch(url, {method:"GET"})
+        .then((resposta)=>resposta.json())
+        .then((json)=>setDados(json))
+    },[])
 
     //Hook
     const [texto,setTexto] = useState("")
@@ -53,7 +53,7 @@ function Main(){
         </div>
         
         <main className="content-main">
-        { filmes.filter((filme)=>filme.titulo.toLocaleLowerCase().includes(texto)).map((filme) => <Filme key = { filme.id } titulo={filme.titulo} sinopse={filme.descricao} imagem={filme.imagem}/>) }        </main>
+        { filmes.filter((filme)=>filme.titulo.toLocaleLowerCase().includes(texto)).map((filme) => <Filme key = { filme._id } titulo={filme.titulo} sinopse={filme.descricao} imagem={filme.imagem}/>) }        </main>
     </>
     )
 }
